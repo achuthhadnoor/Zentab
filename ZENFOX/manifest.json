@@ -1,0 +1,38 @@
+{
+  "name": "ztab",
+  "version": "1.0",
+  "description": "Tab switcher that makes you pro at managing tabs!",
+  "permissions": [
+    "activeTab", 
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ], 
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/favicon-16x16.png",
+      "32": "images/favicon-32x32.png"
+    }
+  },
+  "icons": {
+    "16": "images/favicon-16x16.png",
+    "32": "images/favicon-32x32.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+Z",
+        "mac": "Alt+Z",
+        "chromeos": "Alt+Z",
+        "linux": "Alt+Z"
+      }
+    }
+  },
+  "manifest_version": 2
+}

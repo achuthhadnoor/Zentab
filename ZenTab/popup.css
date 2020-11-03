@@ -1,0 +1,145 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-image: url('images/bg.jpg');
+    overflow: hidden;
+    color:#f8f8f8;
+    width: 400px;
+    padding:0;
+    margin:0;
+    /* background: #5B5B5B; */
+}
+::placeholder {
+    color:rgb(216, 216, 216);
+    opacity: 1; /* Firefox */
+  }
+  
+ul {
+    list-style: none;
+    margin-top: 10;
+    padding: 0;
+    text-align: right;
+}
+
+li {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+.fav-img{
+    height:20px;
+    width:20px;
+}
+.title{
+    text-align: left;
+    padding:5px 10px; 
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 3px;
+    margin-top: 2px; 
+    transition: all .1s linear;
+    flex:1;
+}
+.title-options{
+    color:#fff;
+}
+
+.sidebar_container {
+    padding: 10px;
+    width: 350px;
+}
+
+.sidebar-title {
+    padding: 5px 10px;
+    color: rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.sidebar-title span{
+    flex:1
+}
+.sidebar-body {
+    padding: 5px 0px;
+    font-size: .9em;
+    background: rgba(113, 109, 109, 0.1);
+    backdrop-filter: blur(14px);
+    border-radius: 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    padding: 10px;
+    border: none;
+    max-width: 350px;
+    margin:auto;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    background: rgb(167 167 167 / 17%);
+    color: #fff;
+    backdrop-filter: blur(10px);
+} 
+.list-items {
+    height: 18px;
+    padding: 10px;
+    display:flex;
+    align-items:center;
+    outline:none;
+}
+.list-items:focus{
+    background-color: rgb(0 0 0 / 17%);
+}
+.list-items:hover{
+    background-color: rgb(0 0 0 / 17%);
+}
+.options{
+    display: none;
+}
+.list-items:hover .options{     
+    display: flex;
+}
+.option{
+    padding:3px;
+    color:#fff;
+} 
+.row{
+    display:flex;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    transition: all .1s linear;
+    flex: 1;
+    flex-direction: column; 
+    width: fit-content; 
+    font-size: 14px;
+    user-select: none;
+}
+.row .url{
+    font-size: .7em;
+    padding: 5px;
+}
+.info{
+    font-size: .7em;
+    text-align: center;
+    padding:5px;
+    user-select: none;
+}
+.highlight{
+    background:#eeeeee5e;
+    padding:5px 10px;
+    border-radius:5px;
+}
